@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+{% block box %}
+<section class="text-center">
+<form action="/setting" method="post">
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <label for="ref"> Referreral link</label>
+           
+        </div>
+    </div>
+  </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+             
+            <input type="text" value="{{ref}}" name="ref" required="">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label for="ref"> profile picture</label>
+        </div>
+    </div>
+</div>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+           
+            <input type="file" value="{{pic}}" class=" btn btn-primary" accept="image/*" name="pic">
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="submit"  class="btn btn-success"> save </button>
+            </class>
+        </div>
+    </div>
+
+</form>
+</section>
+ 
+
+{% endblock %}

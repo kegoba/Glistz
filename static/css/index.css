@@ -1,0 +1,53 @@
+footer{
+    background:#739DF3;
+}
+
+.footer{
+    margin-top: 30px;
+ 
+}
+.ref-2{
+    width: 300px
+}
+
+.navbar{
+      background:#739DF3;
+}
+.form{
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+input[type="text"],input[type="password"],
+ input[type="email"], input[type="file" ],
+ button[type="submit"], select[type="select"],
+ textarea[type="textarea"]{
+
+    width: 300px;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.user-info{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.pic{
+      width: 300px;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.map{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:100%;
+}
+
+
+

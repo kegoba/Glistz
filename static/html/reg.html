@@ -1,0 +1,125 @@
+{% extends "index.html" %}
+{% block box %}
+<section class="text-center">
+<form action="/reg" method="POST" class="form">
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <label> 
+                  First Name
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="container ">
+        <div class="row">
+            <div class="col">
+                <input type="text" name="fname" value="{{fname}}" required="">
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Last Name
+                    </label> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="lname" value="{{lname}}" required="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Gender
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <select type="select" name="gender" value="{{gender}}" required="">
+                        <option disabled selected>Gender</option>
+                        <option value="male"> Male</option>
+                        <option value="female"> Female</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+       
+           <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Email
+                    </label>
+                </div>
+            
+            </div>
+           </div>
+        <div class="conatainer">
+            <div class="row">
+                <div class="col">
+                    <input type="email" name="email" value="{{email}}">
+                </div>
+            
+            </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <label>
+                    Password
+                </label>
+            </div>
+        </div>
+        </div> 
+        <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <input type="password" name="Password" value="{{password}}">
+                        </div>
+                    </div>
+        </div>  
+        <div class="container"> 
+            <div class="row">
+                <div class="col">
+                    <label>
+                        Comfirm Password
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input type="password" name="password" value="{{password2}}">
+                </div>
+            </div>
+        </div>
+       <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-success" > Signup </button>
+            </div>
+        </div>
+    </div>
+
+</form>
+</section>
+
+
+
+
+
+
+
+{% endblock %}

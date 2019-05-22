@@ -1,0 +1,52 @@
+{% extends "index.html" %}
+{% block box %}
+
+
+    <div class="container" >
+       
+        <div class="row">
+            <div class="col">
+            <div class="col">
+                {% if name %}
+                <h4> Hi {{ name }}</h4>
+                {% endif %}
+            </div>
+            </div>
+
+             
+        </div>
+    </div>
+
+<div class="container user-info">
+   
+    <div class="row">
+
+        <div class="col">
+            {% if id  %}
+            <h4 class="text-center btn btn-primary ref-2">Refereral-ID </h4>
+            <h6 class="text-center ref-2">{{ id }} </h6>
+            {% endif %}
+        </div>
+
+            <div class="col">
+                {% if ref  %}
+                <h4 class="text-center btn btn-primary ref-2"> Number Of User Refered</h4>
+                <h6 class="text-center ref-2 "> {{ ref }} </h6> 
+                {% endif %}
+            </div>
+     
+        <div class="col">
+            {% if bal  %}
+            <h4 class="text-center btn btn-primary ref-2"> Current Balance </h4> 
+            <input type="text" disabled class="text-center ref-2" value="{{ bal}}" > 
+            {% endif %}
+        </div>
+       
+    </div>
+
+</div>
+{% endblock %}
+
+
+
+

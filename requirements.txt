@@ -1,0 +1,6 @@
+python 3.1 or higher verison
+sqlalchemy 
+vir
+
+
+sqlite 

@@ -1,0 +1,23 @@
+{% extends index.hmtl %}
+{%  block box %}
+<form action="/setting" method="post">
+    <div class="row">
+        <div class="col">
+            <label for="ref"> Referreral link</label>
+            <input type="text" class="form-control" value="{ref}" name="{ref}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="ref"> Refered link</label>
+            <input type="file" class="form-control" value="{pic}" name="{pic}">
+        </div>
+    </div>
+
+</form>
+ 
+
+
+
+
+{% endif %}
