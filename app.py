@@ -6,10 +6,16 @@ from models.ormdb import db_schema, Reg
 
 app = Flask(__name__, template_folder="static/html")
 
-app.config.update(
-TESTING = True,
-SECRET_KEY ="123"
-)
+if os.environ.get("ENV") == "production":
+    app.config["SECRET_KEY"] ="this_my_key"
+    app.config["DEBUG"] =False
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL'] 
+else:
+    app.config["DEBUG"] = True
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://ydgielxylcswqh:a2558be5543a818e80e18179d604c9cc118d08dc8beb8b33c8b2416ffe565815@ec2-54-163-226-238.compute-1.amazonaws.com:5432/d8j9fgf7o86lcq"
+    app.config["SQLACHEMLY_TRACK_NOTIFICATIONS"] = False
+    app.config["SECRET_KEY"] ="this_my_key"
+
 
 
 # +-------------------------+-------------------------+

@@ -1,6 +1,20 @@
-python 3.1 or higher verison
-sqlalchemy 
-vir
-
-
-sqlite 
+alembic==1.0.10
+click==6.7
+Flask==1.0.2
+Flask-Login==0.4.1
+Flask-Migrate==2.4.0
+Flask-Script==2.0.6
+Flask-SQLAlchemy==2.4.0
+gunicorn==19.9.0
+itsdangerous==0.24
+Jinja2==2.10
+Mako==1.0.10
+MarkupSafe==1.0
+psycopg2==2.7.6.1
+pyodbc==4.0.23
+python-dateutil==2.8.0
+python-editor==1.0.4
+six==1.12.0
+SQLAlchemy==1.2.10
+Werkzeug==0.14.1
+WTForms==2.2.1
